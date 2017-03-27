@@ -40,11 +40,21 @@ h1{
 }
 
 .tabla tfoot td{
-	border:none;
+	border:none;	
 }
-
+/*
+#dato{
+	column-span:2;
+	margin:auto;
+	text-align: center;
+}
+*/
+.tabla tfoot button{
+	background-color: #FFF;
+	cursor: pointer;
+}
 footer p{
-	text-align:center;
+	text-align: center;
 }
 
 
