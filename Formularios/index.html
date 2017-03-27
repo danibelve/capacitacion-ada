@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Formularios</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="header">
+			<h1>Formularios</h1>
+		</div><!-- fin .header-->
+		<div class ="content">
+			<div class="formulario">
+						<form action="formulario.php#contacto" method="POST">
+				   
+							<ul>
+								<li>
+									 <label for="name">Nombre:</label><br/>
+									 <input type="text" name="nombre" placeholder="Nombre y Apellido" required />
+								</li>
+								<li>
+									<label for="email">Email:</label><br/>
+									<input type="email" name="email" placeholder="usuario@gmail.com" required />
+								</li>
+								<li>
+									<label for="message">Mensaje:</label><br/>
+									<textarea name="mensaje" cols="40" rows="6" placeholder="Deja aquí tu mensaje..." required></textarea>
+								</li>
+								<li>
+									<button class="submit" type="submit"> </button>
+								</li>
+							</ul>
+						</form>
+			</div>
+		</div><!-- fin .content-->
+	</body>
+</html>
