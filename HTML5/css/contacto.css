@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url("../img/pattern.jpg");
+}
+/* HEADER */
+h1{
+	text-align:center;
+	color: crimson;
+	margin: 10px 15px;
+}
+
+/* NAV */
+
+nav{
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	font-size: 12px;
+	width: 100%;
+}
+
+nav a{
+	display: inline-block;
+	color: #000;
+	width: 23%;
+	text-align: center;
+	margin: auto;
+}
+
+nav a:hover{
+	color: #4B0082;
+}
+
+/* SECTION */
+section {
+	width: 100%;
+}
+section h2{
+	color: green;
+	text-align: center;
+	margin: 10px 10px;
+}
+/* ARTICLE */
+
+.formulario form{
+	text-align:center;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+.formulario label {
+	background-color: #FFF;
+}
+.formulario li{
+	list-style-type: none;
+	
+}
+.formulario textarea{
+	resize: none;
+	max-width: 328.017px;
+	max-height: 104px;
+	border-radius: 8px;
+	padding:2px;
+	text-align: center;
+}
+
+.formulario input{
+	border-radius: 8px;
+	padding:2px;
+	text-align: center;
+	
+}
+
+.formulario button{
+	padding-top: 2px;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	background-color: antiquewhite;
+	background-image:url("../img/icons/send.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.formulario button:hover{
+	cursor: pointer;
+	
+}
+/* FOOTER */
+
+footer {
+	clear:both;
+}
+footer p{
+	text-align: center;
+}
+
+
+footer span {
+	color: red;
+}

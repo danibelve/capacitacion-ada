@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Diseño adaptative</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="../css/contacto.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	</head>
+	<body>
+		<header>
+			<h1>Diseño Adaptative</h1>
+		</header><!-- fin header-->
+		<nav>
+			<a href="../index.html" target="_self">Inicio</a>
+			<a href="#" target="_blank">Lalala</a>
+			<a href="#" target="_blank">Somos</a>
+			<a href="#" target="_blank">Contacto</a>
+		</nav><!-- fin nav-->
+		<section>
+			<h2> Contacto</h2>
+		</section><!-- fin section-->
+		<article>
+			<div class="formulario">
+						<form action="formulario.php#contacto" method="POST">
+				   
+							<ul>
+								<li>
+									 <label for="name">Nombre:</label><br/>
+									 <input type="text" name="nombre" placeholder="Nombre y Apellido" required />
+								</li>
+								<li>
+									<label for="email">Email:</label><br/>
+									<input type="email" name="email" placeholder="usuario@gmail.com" required />
+								</li>
+								<li>
+									<label for="message">Mensaje:</label><br/>
+									<textarea name="mensaje" cols="40" rows="6" placeholder="Deja aquí tu mensaje..." required></textarea>
+								</li>
+								<li>
+									<button class="submit" type="submit"> </button>
+								</li>
+							</ul>
+						</form>
+		<footer>
+			<div class="pie">
+				<p>Creado en conjunto con las chicas de AdaITW <span>&hearts;</span></p>
+			</div>
+		</footer>
+	</body>
+</html>
