@@ -1,0 +1,114 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url("../img/pattern.jpg");
+}
+/* HEADER */
+h1{
+	text-align:center;
+	color: crimson;
+	margin: 10px 15px;
+}
+
+/* NAV */
+
+nav{
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	font-size: 12px;
+	width: 100%;
+}
+
+nav a{
+	display: inline-block;
+	color: #000;
+	width: 23%;
+	text-align: center;
+	margin: auto;
+}
+
+nav a:hover{
+	color: #4B0082;
+}
+
+/* SECTION */
+section {
+	width: 100%;
+}
+section h2{
+	color: green;
+	text-align: center;
+	margin: 10px 10px;
+}
+/* ARTICLE */
+
+article{
+	display: flex;
+	justify-content: center;
+	clear: both;
+	width: 80%;
+	margin:auto;
+	padding: 10px;
+	
+}
+table{
+	border-collapse: collapse;
+}
+
+table th,td {
+	border: 2px solid #000;
+	padding-left: 2px;
+	padding-right: 2px;
+	width: 130px;
+}
+table thead {
+	background: #000;
+	color: #FFF;
+}
+table tbody tr:nth-child(even){
+    background: crimson;
+    color: #FFF;
+}
+ 
+table tbody tr:nth-child(odd){
+    background: #FFF;
+    color: crimson;
+}
+
+table tbody tr:hover{
+	background-color: #000;
+	color: #FFF;
+	font-weight: bold;
+	cursor: pointer;
+}
+table tfoot{
+	text-align: center;
+}
+
+table tfoot td{
+	border:none;	
+}
+
+table tfoot button{
+	background-color: #FFF;
+	cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+	clear:both;
+	
+}
+.pie p{
+	text-align: center;
+	clear: both;
+}
+
+
+.pie span {
+	color: red;
+}

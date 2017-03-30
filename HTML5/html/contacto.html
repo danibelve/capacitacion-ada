@@ -11,8 +11,8 @@
 		</header><!-- fin header-->
 		<nav>
 			<a href="../index.html" target="_self">Inicio</a>
-			<a href="#" target="_blank">Lalala</a>
-			<a href="#" target="_blank">Somos</a>
+			<a href="tabla.html" target="_self">Tabla</a>
+			<a href="#" target="_self">Somos</a>
 			<a href="#" target="_blank">Contacto</a>
 		</nav><!-- fin nav-->
 		<section>
@@ -32,6 +32,30 @@
 									<input type="email" name="email" placeholder="usuario@gmail.com" required />
 								</li>
 								<li>
+									<label for="País">País</label><br/>
+										<select>
+											<option>Argentina</option>
+											<option>Brasil</option>
+											<option>Chile</option>
+										</select>
+									</label>
+								</li>
+								<li class="checkbox">
+									<label for="mascota">Mascotas que tenés</label><br/>
+									<label><input type="checkbox" value="Gato" name="mascota">Gato</label>
+									<label><input type="checkbox" value="Perro" name="mascota">Perro</label>
+									<label><input type="checkbox" value="Pez" name="mascota">Pez</label>
+									<label><input type="checkbox" value="Tortuga" name="mascota">Tortuga</label>
+								</li>
+								<li class="checkbox">
+									<label for="preferencia">Mascota preferida</label><br/>
+									<label><input type="radio" value="Gato" name="preferencia" checked>Gato</label>
+									<label><input type="radio" value="Perro" name="preferencia">Perro</label>
+									<label><input type="radio" value="Pez" name="preferencia">Pez</label>
+									<label><input type="radio" value="tortuga" name="preferencia">Tortuga</label>
+									<label><input type="radio" value="pájaro" name="preferencia">Pájaro</label>
+								</li>
+								<li>
 									<label for="message">Mensaje:</label><br/>
 									<textarea name="mensaje" cols="40" rows="6" placeholder="Deja aquí tu mensaje..." required></textarea>
 								</li>
@@ -40,6 +64,7 @@
 								</li>
 							</ul>
 						</form>
+			</div><!-- fin .formulario-->
 		<footer>
 			<div class="pie">
 				<p>Creado en conjunto con las chicas de AdaITW <span>&hearts;</span></p>

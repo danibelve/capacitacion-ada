@@ -6,6 +6,25 @@
 body {
 	background-image: url("../img/pattern.jpg");
 }
+
+/* ----SOLO PARA WELCOME --- */
+
+.welcome{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.welcome figure figcaption{
+	text-align: center; 
+	font-size: 24px;
+}
+
+.welcome figure figcaption a{
+	color: crimson;
+}
+
+
 /* HEADER */
 h1{
 	text-align:center;
@@ -49,9 +68,52 @@ article{
 	position: relative;
 	float: left;
 	margin-left: 5px;
+	width: 100%;
+	background-color: crimson;
+	margin-bottom: 5px;
+}
+
+#info1, #info2,#info3,#info4,#info5,#info6 {
+	display: none;
+}
+
+#boton{
+	background-image: url("../img/icons/mas.png");
+	background-repeat: none;
+	display: flex;
+	text-align: justify;
+	margin:auto;
+	justify-content: center center;
+	width: 30px;
+	height: 30px;	
+	position:relative;
+}
+#boton:hover{
+	cursor: pointer;	
+}
+
+/*#boton:active{
+	
+}*/
+/*
+#mas {
+	position: relative;
+	overflow: hidden;
+}*/
+
+article{
+	position: relative;
+	float: left;
+	margin-left: 5px;
 	width: 80%;
 	background-color: crimson;
 	margin-bottom: 5px;
+}
+
+.wrapper {
+	display: inline-block;
+	position: relative;
+	background-color: crimson;
 }
 .modulo1 {
 	display: flex;
@@ -65,9 +127,10 @@ article{
 }
 
 .perro{
+	position: relative;
 	background-color: #FFFF70;
 	margin: auto;
-	overflow-y: hidden;
+	margin-top: 5px;
 	
 }
 
@@ -78,17 +141,19 @@ article{
 }
 
 .perro p{
+	position:relative;
 	display: flex;
-	width: 180px;
+	padding:auto;
 	text-align: justify;
 	margin:auto;
 	justify-content: center center;
+	overflow: hidden;
+	width:75%;
 }
 
 .perro img{
 	display: flex;
-	justify-content: center center;
-	margin: 0 25px 0 25px;
+	justify-content: center;	
 }
 
 .perro-par{
@@ -98,9 +163,8 @@ article{
 /* ASIDE */
 aside{
 	display: flex;
-	float: right;
+	flex-direction: flex-end;
 	width: 15%;
-	height: 585px;
 	background-color: crimson;
 	clear:right;
 }
@@ -139,52 +203,63 @@ footer span {
 	color: red;
 }
 
-@media(max-width:732px){
+@media(max-width:810px){
 	.modulo1{
+		flex-direction: column;
+	}
+	.perro{
 		display: block;
+		position:relative;
 	}
-	.perro h2{
-	text-align: center;
-	color: #DAA520;
-	font-family: arial, verdana, sans-serif;	
+	aside{
+		
+		height: 1799px;
+	}
+}
+@media(max-width:550px){
+	.modulo1{
+		flex-direction: column;
+		position: relative;
+		flex-direction:flex-start;
+		width: 70%;
+	}
+	.perro{
+		display: block;
+		position:relative;
+		flex-direction: flex-start;
+	}
+	aside{
+		display: flex;
+		flex-direction: flex-end;
+		width: 10%;
+		height: 1799px;
+		background-color: crimson;
+		clear:right;
+	}
+	
+	aside ul {
+		position: relative;
+		margin-left: -50px;
+	}
+	aside h3{
+		text-align: center;
+		font-size: 25px;
 	}
 
-	.perro p{
-		display: flex;
-		clear: right;
-		text-align: justify;
-		margin:auto;
-		padding: 10px;
-		justify-content: right center;
+	aside ul li {
+		height: 100px;
+		list-style-type: none;
+		
 	}
-
-	.perro img{
-		display: flex;
-		float: left;
-		justify-content: left;
+	aside ul li a{
+		color: #FFF;
+		font-size: 18px;
+		font-weight: bold;
+		text-align:justify;
+		
+		
 	}
 }
 
-/*
-@media(max-width:550px){
-	.modulo1{
-		display: block;
-	}
-	.perro h2{
-	text-align: center;
-	color: #DAA520;
-	font-family: arial, verdana, sans-serif;	
-	}
 
-	.perro p{
-		display: flex;
-		clear: right;
-		text-align: left;
-	}
-
-	.perro img{
-		display: flex;
-		float: left;
-		justify-content: left;
-	}
-}*/
+	

@@ -44,23 +44,31 @@ section h2{
 	margin: 10px 10px;
 }
 /* ARTICLE */
-
+.formulario{
+	position:relative;
+	width: 75%;
+	margin: auto;
+}
 .formulario form{
-	text-align:center;
+	display: flex;
+	justify-content: center;
 	padding-top: 5px;
 	font-weight: bold;
 }
 
-.formulario label {
-	background-color: #FFF;
-}
 .formulario li{
 	list-style-type: none;
+	margin: 10px 10px;
+	text-align: center;
 	
+}
+
+.checkbox input{
+	margin: 5px;
 }
 .formulario textarea{
 	resize: none;
-	max-width: 328.017px;
+	max-width: 328px;
 	max-height: 104px;
 	border-radius: 8px;
 	padding:2px;
@@ -76,6 +84,7 @@ section h2{
 
 .formulario button{
 	padding-top: 2px;
+	margin: auto;
 	border-radius: 50%;
 	width: 35px;
 	height: 35px;
@@ -90,6 +99,8 @@ section h2{
 	cursor: pointer;
 	
 }
+
+
 /* FOOTER */
 
 footer {
