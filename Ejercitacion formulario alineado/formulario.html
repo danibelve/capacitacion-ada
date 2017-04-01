@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario alineado</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/formulario.css"/>
+	</head>
+	<body>
+		<header>
+			<h1>Práctica Formulario</h1>
+		</header>
+		<div class="formulario">
+				<form action="formulario.php" method="POST">
+					<table>
+						<tbody>
+							<tr>
+								<td><label for="name">Nombre:</label></td>
+								<td><input type="text" name="nombre" placeholder="Nombre y Apellido" required /></td>
+							</tr>
+								<td><label for="email">Email:</label></td>
+								<td><input type="email" name="email" placeholder="usuario@gmail.com" required /></td>
+							<tr>
+								<td><label for="País">País:</label></td>
+								<td>
+									<select>
+										<option>Argentina</option>
+										<option>Brasil</option>
+										<option>Chile</option>
+									</select>
+								</td>
+							</tr>
+								<td><label for="message">Mensaje:</label></td>
+								<td><textarea name="mensaje" cols="40" rows="6" placeholder="Deja aquí tu mensaje..." required></textarea></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<td colspan="2"><button class="submit" type="submit" value="enviar"></button></td>
+						</tfoot>
+					</table><!-- fin .table -->
+					
+				</form>				
+		</div><!-- fin .formulario-->
+	</body>
+</html>

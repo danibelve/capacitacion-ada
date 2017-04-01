@@ -1,0 +1,57 @@
+body{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	position:relative;
+}
+
+.formulario table tbody td:first-child{
+	text-align: right;
+}
+
+.formulario input{
+	padding:2px;
+	text-align: center;
+	
+}
+/*
+.formulario table tbody tr{
+	overflow:hidden;
+}*/
+
+.formulario textarea{
+	resize: none;
+	max-width: 328px;
+	max-height: 104px;
+	padding:2px;
+	text-align: center;
+}
+
+.formulario table tfoot td {
+	text-align:center;
+}
+
+.formulario button{
+	padding-top: 2px;
+	margin: auto;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	background-color: antiquewhite;
+	background-image: url("../img/icon.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.formulario button:hover{
+	cursor: pointer;
+	
+}
