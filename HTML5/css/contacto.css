@@ -44,6 +44,10 @@ section h2{
 	margin: 10px 10px;
 }
 /* ARTICLE */
+#contacto {
+	position:relative;
+	width: 100%;
+}
 .formulario{
 	position:relative;
 	width: 75%;

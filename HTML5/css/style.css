@@ -12,7 +12,7 @@ body {
 .welcome{
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 5px;
 }
 
 .welcome figure figcaption{
@@ -56,9 +56,11 @@ nav a:hover{
 /* SECTION */
 section {
 	width: 80%;
+	background-color: crimson;
+	clear: both;
 }
 section h2{
-	color: green;
+	color: white;
 	text-align: center;
 	margin: 10px 10px;
 }
@@ -101,6 +103,8 @@ article{
 	overflow: hidden;
 }*/
 
+
+
 article{
 	position: relative;
 	float: left;
@@ -111,9 +115,12 @@ article{
 }
 
 .wrapper {
-	display: inline-block;
+	display: flex;
+	justify-content: space-around;
 	position: relative;
 	background-color: crimson;
+	width: 90%;
+	margin: auto;
 }
 .modulo1 {
 	display: flex;
@@ -153,7 +160,8 @@ article{
 
 .perro img{
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
+margin: auto;	
 }
 
 .perro-par{
@@ -186,6 +194,127 @@ aside ul li a{
 	font-weight: bold;
 	text-align:justify;
 	
+	
+}
+
+/* SOLO PARA TABLA */
+
+#tabla{
+	display: flex;
+	justify-content: center;
+	clear: both;
+	width: 100%;
+	margin:auto;
+	padding: 10px;
+	background-color: transparent;
+	
+}
+table{
+	border-collapse: collapse;
+}
+
+table th,td {
+	border: 2px solid #000;
+	padding-left: 2px;
+	padding-right: 2px;
+	width: 130px;
+}
+table thead {
+	background: #000;
+	color: #FFF;
+}
+table tbody tr:nth-child(even){
+    background: crimson;
+    color: #FFF;
+}
+ 
+table tbody tr:nth-child(odd){
+    background: #FFF;
+    color: crimson;
+}
+
+table tbody tr:hover{
+	background-color: #000;
+	color: #FFF;
+	font-weight: bold;
+	cursor: pointer;
+}
+table tfoot{
+	text-align: center;
+}
+
+table tfoot td{
+	border:none;	
+}
+
+table tfoot button{
+	background-color: #FFF;
+	cursor: pointer;
+}
+/* SOLO PARA FORMULARIO*/
+#contacto {
+	display: flex;
+	justify-content: center;
+	clear: both;
+	width: 100%;
+	margin:auto;
+	padding: 10px;
+	background-color: transparent;
+}
+.formulario{
+	position:relative;
+	width:  100%;
+	margin: auto;
+	clear:both;
+}
+.formulario form{
+	margin: auto;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+
+.formulario form li{
+	list-style-type: none;
+	margin: 10px 10px;
+	text-align: center;
+	
+}
+
+.checkbox input{
+	margin: 5px;
+}
+.formulario textarea{
+	resize: none;
+	max-width: 328px;
+	max-height: 104px;
+	border-radius: 8px;
+	padding:2px;
+	text-align: center;
+}
+
+.formulario input{
+	border-radius: 8px;
+	padding:2px;
+	text-align: center;
+	
+}
+
+.formulario button{
+	padding-top: 2px;
+	margin: auto;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	background-color: antiquewhite;
+	background-image:url("../img/icons/send.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.formulario button:hover{
+	cursor: pointer;
 	
 }
 
