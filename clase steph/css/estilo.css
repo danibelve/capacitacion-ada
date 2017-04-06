@@ -1,0 +1,226 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* ---------------- BODY ---------------- */
+body{
+	
+	background: url(../img/fondo.jpg) #000;
+	background-size: cover; /* cubro todo el ancho del body*/
+	background-attachment: fixed;
+}
+
+/* ---------------- CONTENEDOR ---------------- */
+.contenedor {
+	width: 90%;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* ---------------- HEADER ---------------- */
+header{
+	width: 100%;
+	background: #FFF;
+	display: flex;
+	display-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .menu a{
+	color: #C950D4;
+	text-decoration: none;
+	font-family: roboto, sans-serif;
+	font-size: 18px;
+	margin-right: 40px;
+}
+
+header .menu a:hover{
+	font-weight: 700;
+}
+
+header .menu a:active {
+	font-weight: 700;
+}
+
+/* ---------------- MAIN ---------------- */
+
+.main {
+	width: 70%;
+	background: #FA9292;
+	padding: 20px;
+
+}
+
+.main article .thumb{
+	margin-bottom: 20px;
+}
+
+.main article .thumb img{
+	width: 100%;
+}
+
+.main article h2{
+	margin-bottom: 20px;
+}
+
+.main article p{
+	text-align: justify;
+}
+
+/* ----------------MENU MOBILE ---------------- */
+
+
+#menu {
+	display: none;
+} 
+.barra{ 
+	display: none;
+	position:fixed;
+	top: 0;
+	z-index: 5;
+	height: 30px;
+	width: 100%;
+	background-color: #000;
+}
+.toggle{
+	float: left;
+	margin-left: 10px;
+	background-image: url("../img/hamburger.png");
+	line-height:30px;
+	border-style:none;
+	width: 30px;
+	height: 30px;	
+}
+.toggle:hover{
+	cursor: pointer;	
+}
+.mobile{
+	display: none;
+	/padding-top: 30px;
+	background-color: #000;
+	list-style-type: none;
+	width: 25%;
+}
+.mobile a{
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+	padding: 5px 0;
+	border-bottom: 1px dashed #960107;
+}
+.mobile a:hover, .mobile a:active{
+	background-color: #960107;
+	color: #FFF;
+}
+
+/* ---------------- ASIDE ---------------- */
+
+aside{
+	width: 30%;
+	background: #2EFFFF;
+	padding: 20px;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+aside .ad{
+	text-align: center;
+	color: #FFF;
+	font-size: 30px;
+	background:grey;
+	margin: 20px 0px;
+	padding: 50px;
+
+}
+
+/* ---------------- FOOTER ---------------- */
+footer{
+	width: 100%;
+	background: #FFF;
+	padding: 20px;
+	color: black;
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+
+footer .redes-sociales a{
+	color: black;
+	text-decoration: underline;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+footer .redes-sociales a:hover{
+	text-decoration: none;
+	font-weight: 700;
+
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+@media screen and (max-width: 800px){
+	.main {
+		width:100%;
+	}
+	
+	aside{
+		width: 100%;
+		flex-direction: row;
+	}
+
+	aside .ad {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 706px){
+	header{
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+
+	footer{
+		flex-direction: column;
+		
+	}
+
+	header .menu a{
+	margin-right: 15px;
+	}
+
+	
+}
+
+@media screen and (max-width: 600px){
+	
+
+	.barra, .toggle, .mobile{
+	display: block;
+	} 
+	
+	header .menu {
+	display:none;
+	}
+	.contenedor {
+	margin-top: 30px;
+	}
+}
+
+
+
