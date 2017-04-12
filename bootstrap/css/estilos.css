@@ -1,0 +1,57 @@
+*{
+	box-sizing: border-box;
+}
+.container {
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+h1{
+	text-align: center;
+	background-color: rgba(255,0,0,0.3);
+}
+
+h2{
+	text-align: center;
+}
+
+h2 span {
+	padding-right: 1px;
+}
+.fila {
+	padding: 20px;
+	overflow: hidden;
+}
+.tres {
+	overflow: hidden;
+}
+.tres p{
+	text-align: justify;
+}
+
+.seis{
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	overflow: hidden;
+
+}
+
+.seis p{
+	text-align: justify;
+	flex-grow: 1;
+}
+.col-md-6 img, .col-sm-6 img{
+	padding: 20px;
+	text-align: center;
+	align-items: center;
+	margin: 0 auto;
+
+}
+.destacado{
+	background-color: crimson;
+}
