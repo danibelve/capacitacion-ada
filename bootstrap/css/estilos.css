@@ -6,9 +6,18 @@
 	overflow: hidden;
 }
 
-h1{
+.flex{
+	display: flex;
+	align-items: baseline;
+	
+}
+.flex h1{
 	text-align: center;
 	background-color: rgba(255,0,0,0.3);
+	
+}
+.flex nav{
+	
 }
 
 h2{

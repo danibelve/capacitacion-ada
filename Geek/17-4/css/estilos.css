@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box ;
+	-moz-box-sizing:border-box ;
+	padding: 0;
+	margin: 0;
+}
+/*
+.informacion-radio{
+	padding-bottom: 13px;
+}
+
+
+.form-check{
+display: inline;
+}
+*/
+.comentario{
+	display: block;
+	text-align: center;
+
+}
+
+.comentario textarea{
+	text-align: center;
+}
+
+.boton{
+	display: inline-block;
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 374px){
+	.informacion-radio{
+		text-align: left;
+	}
+
+	.arreglo{
+		margin-left: 10px;
+	}
+	.informacion-radio .radio-inline{
+		display:block;
+	}
+}

@@ -1,0 +1,52 @@
+.fecha {
+	background-color: #193284;
+	color: #FFF;
+	height: 18px;
+	text-align: right;
+	font-size: 1em;
+	font-weight: bold;
+}
+.header {
+	background: url("../img/banner.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	border-radius:8px;
+	margin-bottom: 10px;	
+}
+
+.header button {
+	margin-top: 5px;
+}
+.banner h1{
+	color: #FFF;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+/*  --------------- SLIDER ---------------*/
+.center{
+	display:flex;
+	justify-content: center;
+}
+
+.slide-p{
+	color: antiquewhite;
+	font-weight:bold;
+}
+
+/* seccion fotos */
+
+.fotos{
+	display: flex;
+	justify-content: center;
+}
+/* ---------------- miniaturas ---*/
+
+.mini {
+	margin: 20px 0 20px 0;
+}
+
+.mini a{
+	display:flex;
+	justify-content: center;
+}

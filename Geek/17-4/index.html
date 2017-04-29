@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="utf-8">
+	<!-- HOJAS DE ESTILOS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row-form formulario">
+			 <form role="form">
+			 	<div class="col-lg-6 col-md-6">
+					<div class="form-group">
+						<label for="nombre">Nombre y apellido:</label>
+					 	<input type="text" class="form-control" id="nombre">
+					</div><!-- fin nombre-->
+					<div class="form-group">
+					    <label for="email">Email:</label>
+					    <input type="email" class="form-control" id="email">
+					</div><!-- fin email-->
+					<div class="form-group">
+						<label for="nacimiento">Fecha de nacimiento:</label>
+							<div class="input-group">
+                        		<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                       			 <input type="text" class="form-control" placeholder="Fecha de nacimiento">
+                       		</div><!-- fin .input-group-->
+                    </div><!--fin nacimiento -->
+			       <div class="form-group">
+					    <label for ="notebok"> ¿Traés tu notebok? </label>
+					    	<div>
+							  	<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="consulta" id="verdadero" value="verdadero" checked>
+										Si
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="consulta" id="falso" value="falso">
+										No
+									</label>
+								</div>
+                            </div>			  
+					</div><!-- fin .notebook-->
+					<div class="form-group">
+                        <label>Charlas que venís a ver</label>
+						<div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" value="winvstux" checked>
+									Win vs Tux
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" value="winvstux">
+									Git
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" value="winvstux">
+									Docker
+								</label>
+							</div>
+						</div><!-- fin div funcion linea-->
+                    </div><!-- fin charlas-->
+			  	</div> <!-- fin izquierda -->
+			  	<div class="col-lg-6 col-md-6">
+			  		<div class="form-group">
+                       <label>Sistema Operativo</label>
+                            <select class="form-control">
+                                <option>Windows</option>
+                                <option>Linux</option>
+                            </select>
+                    </div><!-- fin OS -->
+                    <div class="form-group">
+					    <label for="informacion"> ¿Cómo te enteraste? </label>
+							<div class="informacion-radio">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+										Amigo
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+										Comunidad
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+										Stefi
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">	
+										Vi luz y entré
+									</label>
+								</div>
+							</div>
+					</div><!-- fin informacion-->
+					<div class="form-group">
+						<label for="fav-linux">¿Cuál es tu instrucción Linux favorita?</label>
+						<input class="form-control" type="text" name="fav-linux" placeholder="Escriba su respuesta aquí">
+					</div><!-- fin fav-linux-->
+					<div class="form-group foto-perfil">
+                        <label for="foto-perfil">Subí tu foto de perfil</label>
+                        <input type="file">
+                    </div><!-- fin foto-->
+				</div><!-- fin derecha -->
+					<div class="form-group col-md-12 comentario">
+						<label for="comentario">Comentarios:</label>
+						<textarea class="form-control" rows="3" placeholder="Escriba su mensaje aquí"></textarea>
+						<div class="boton">
+							<button type="submit" class="btn btn-default form-control">Enviar</button>
+						</div><!-- fin boton-->
+					</div><!-- fin comentario-->
+				
+			</form><!-- fin formulario -->
+		</div><!-- row formulario-->	
+	</div><!-- container -->
+</body>
+</html>

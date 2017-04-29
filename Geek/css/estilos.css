@@ -1,0 +1,266 @@
+@font-face {
+    font-family: pixel;
+    src: url(../fonts/pixel.ttf);
+}
+*{
+	box-sizing: border-box;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/*  BARRA */
+
+.barra{
+	background: #000;
+	opacity: 0.5;
+	display:none;
+	width:100%;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	padding-top: 3px;
+
+}
+
+.mobile{
+	background-color:#000;
+	border:none;
+	
+}
+
+.hamburger{
+	color:#FFF;
+}
+
+.dropdown-menu{
+	background-color: #000;
+	color: #FFF;
+	border: none;
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	width: 100%;
+	
+}
+/* --------- HEADER ---------- */
+
+header{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 5px 5px;
+}
+
+header h1{
+	align-self: center;
+}
+header .title{
+	text-align: left;
+	font-family: pixel;
+	line-height: 240px;
+	font-size: 6em;
+}
+.rojo{
+	color:#F04D41;
+}
+.verde{
+	color:#56BA55;
+}
+.amarillo{
+	color:#E6C81E;
+}
+/*  --------------- SLIDER ---------------*/
+
+.center-img{
+	display:flex;
+	justify-content:center;
+}
+
+.slide-p{
+	color: antiquewhite;
+	font-weight:bold;
+}
+/* --------------- CONTENIDO --------------- */
+
+h2{
+	font-family: 'Press Start 2P';
+	font-size: 2em;
+	text-align: center;
+}
+
+.somos, .editorial{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-content:center;
+}
+
+.somos p{
+	text-align: justify;
+	width: 80%;
+	
+}
+
+/* SECCION DRAGON */
+.dragon{
+
+	display:flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-content:center;
+}
+.dragon img{
+	align-self: center;
+	overflow:hidden;
+}
+
+.dragon p{
+	text-align: justify;
+	width: 80%;
+}
+
+/* SECCION modal */
+.modal-center{
+	display:flex;
+	justify-content: center;
+	align-content:center;
+}
+.modal-center figure{
+	text-align:center;
+}
+.modal-center figure figcaption {
+	text-align: justify;
+	width: 80%;
+}
+/* SECCION EVENTOS */
+
+.eventos {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-between;
+	
+}
+.eventos iframe{
+  margin: auto;
+  padding-top: 20px;
+  align-self: center;
+
+}
+
+.nostalgia{
+	display:flex;
+	flex-wrap: wrap;
+	padding-left: 5px;
+	justify-content: center;
+}
+.nostalgia a{
+	margin-left: 5px;
+}
+.mapa{
+	display:flex;
+	justify-content:center;
+}
+
+/* SOMBRA LOCO */
+.uno{
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
+	background-color: yellow;
+		/* X e Y pueden ser + o -*/
+			/*   X    Y   Blur Color  */
+	box-shadow: 20px 20px 0 #900,
+				-20px -20px 0 #009;
+	/* Varias sombras separadas por coma */
+	transition: all 0.5s;
+}
+.uno:hover{
+	box-shadow: -20px -20px 0 #900,
+				20px 20px 0 #009;
+}
+/* SECCION CONTACTO */
+.block{
+	text-align: center;
+	height: 100%;
+	background-image: url("../img/contacto.png");
+	background-size: contain;
+	padding: 20px 20px;
+	color: #FFF;
+}
+
+.contacto label{
+	padding-bottom: 10px;
+}
+
+
+.icon{
+	font-size: 1em;
+	color: #F04D41;	
+}
+
+.textarea{
+	resize:horizontal;
+	text-align:center;
+}
+
+
+.enviar{
+	background-image: url("../img/boton.png");
+	background-size:contain;
+	font-weight: bolder;
+}
+/* formulario inscripcion */
+.formulario {
+	padding: 20px;
+}
+
+#geek{
+	margin-bottom: 25px;
+}
+
+.form-check{
+	padding-left: 15px;
+}
+.boton {
+	margin-bottom: 25px;
+}
+/* ---- MEDIA QUERIES --- */
+@media (max-width: 1200px) {
+  .dragon{
+	flex-direction: column;
+	}
+}
+@media (max-width: 767px){
+	.barra{
+		display:block;
+	}
+}
+
+@media (max-width: 709px){
+	.nostalgia img{
+	padding-bottom: 5px;
+}
+}
+@media (max-width: 690px) {
+  header{
+	flex-direction: column;
+	padding-bottom: 20px;
+	border-width:5px;  
+    border-style: dashed;
+	border-color:	#F04D41 #56BA55;
+	}
+  header .title{
+	text-align: center;
+	font-size: 3em;
+	line-height: 0;
+	}
+}
+@media (max-width: 518px){
+	.block{
+	background-size: cover;
+	}
+}
