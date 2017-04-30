@@ -12,13 +12,11 @@
 
 .barra{
 	background: #000;
-	opacity: 0.5;
-	display:none;
+	opacity: 0.8;
 	width:100%;
 	position: sticky;
 	top: 0;
 	z-index: 2;
-	padding-top: 3px;
 
 }
 
@@ -76,10 +74,13 @@ header .title{
 	justify-content:center;
 }
 
-.slide-p{
-	color: antiquewhite;
+.new{
+	color: #000;
 	font-weight:bold;
+	background-color: #A7A7A7;
+	opacity: 0.8;
 }
+
 /* --------------- CONTENIDO --------------- */
 
 h2{
@@ -128,8 +129,9 @@ h2{
 	justify-content: center;
 	align-content:center;
 }
-.modal-center figure{
+.modal-center figure img{
 	text-align:center;
+	width: 100%;
 }
 .modal-center figure figcaption {
 	text-align: justify;
@@ -160,6 +162,10 @@ h2{
 .nostalgia a{
 	margin-left: 5px;
 }
+.nostalgia img{
+	padding-bottom: 5px;
+}
+
 .mapa{
 	display:flex;
 	justify-content:center;
@@ -193,9 +199,13 @@ h2{
 }
 
 .contacto label{
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 }
 
+.contacto .grupo{
+	/*padding: 0;
+	margin: 0;*/
+}
 
 .icon{
 	font-size: 1em;
@@ -212,6 +222,16 @@ h2{
 	background-image: url("../img/boton.png");
 	background-size:contain;
 	font-weight: bolder;
+	border: 2px solid  #000;
+	margin-top: 2px;
+}
+
+.enviar:hover{
+	background: #5C94FC;
+	background-size:contain;
+	font-weight: bolder;
+	border: 2px solid  #000;
+	color: #FFF;
 }
 /* formulario inscripcion */
 .formulario {
@@ -234,17 +254,18 @@ h2{
 	flex-direction: column;
 	}
 }
+/*
 @media (max-width: 767px){
 	.barra{
 		display:block;
 	}
-}
+}*/
 
-@media (max-width: 709px){
+/*@media (max-width: 709px){
 	.nostalgia img{
 	padding-bottom: 5px;
-}
-}
+	}
+}*/
 @media (max-width: 690px) {
   header{
 	flex-direction: column;
@@ -263,4 +284,16 @@ h2{
 	.block{
 	background-size: cover;
 	}
+}
+@media (max-width: 500px){
+	.new{
+		display:none;
+	}
+	/*.modal-center{
+	display:block;
+	width: 100%;
+	}
+	.modal-center img{
+		width: 250px;
+	}*/
 }
