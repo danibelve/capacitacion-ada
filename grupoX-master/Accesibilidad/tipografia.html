@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Accesibilidad Web</title>
+	<meta charset="utf-8">
+	<!-- FAV ICON -->
+	<link rel="icon" type="image/gif" href="/img/ico.gif"/>
+	<!-- DESCRIPCIÓN DE CONTENIDO -->
+	<meta name="description" content="Sitio sobre accesibilidad Web. Terminología y métodos para cumplir con la Ley de Accesibilidad Web en Argentina">
+	<meta name="keywords" content="HTML,CSS, Accesibilidad Web, Accesibilidad, Diseño Web accesible, ley de accesibilidad web">
+	<meta name="author" content="Grupo X: Astrid Aldazoro, Daniela Belvedere, Florencia Echazú, Erica Lafuente, Sonia Morales, Tatiana Ortiz, Consuelo Romano, Florencia Secchi, Florencia Temporelli, Constanza Yáñez Calderón">
+	<!-- HOJAS DE ESTILOS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- FUENTE DE GOOGLE -->
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<!-- VIEWPORT-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row menu">
+				<!--NAV SUPERIOR-->
+		        	<nav class="col-xs-12 col-sm-12 col-md-12 bar">
+			            <ul class="nav navbar-nav pull-right borde-nav navegador">
+			              <li>
+			                <a href="html/accesibilidad.html" accesskey="0" tabindex="1"><span class="fa fa-wheelchair icono" aria-hidden="true"></span></a>
+			              </li>
+			              <li>
+			                <a href="#accesibilidad" alt="ir a definiciones de accesibilidad" tabindex="2" accesskey="1"> Definición</a>
+			              </li>
+			              <li>
+			                <a href="#ley" alt="Sobre la Ley de Accesibilidad" tabindex="3" accesskey="2"> Ley de Accesibilidad</a>
+			              </li>
+			              <li>
+			                <a href="#pautas" alt="Sobre la Ley de Accesibilidad" tabindex="4" accesskey="3"> Pautas</a>
+			              </li>
+
+			             <li>
+			                <a href="#reclamo" alt="¿A quién reclamar?" tabindex="5" accesskey="4"> ¿A quién reclamar?</a>
+			              </li>
+			              <li>
+			                <a href="#soluciones" alt="Algunas soluciones básicas" tabindex="6" accesskey="5"> Algunas soluciones Web</a>
+			              </li>
+			              <li>
+			                <a href="#razones" alt="Beneficios de hacer una Web accesible" tabindex="7" accesskey="6"> Beneficios</a>
+			              </li>
+			              <li>
+			                <a href="#herramientas" alt="herramientas para el análisis de sitios y ayuda de desarrollo web accesible" tabindex="8" accesskey="7"> Herramientas de análisis y ayuda</a>
+			              </li>
+					</nav><!--fin nav superior-->
+				</div><!--fin menu-->
+		<div class="row ">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<header class="header">
+					<h1><a href="#" alt="Accesibilidad Web" title="Banner del sitio"><img src="img/banner.svg"></a></h1>
+				</header>
+			</div>
+		</div><!--fin .row-->
+	</div> <!--Fin class container-fluid-->
+	<div class="container">
+		<section class="row accesibilidad" id="accesibilidad">
+				<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h3 tabindex="11">Accesibilidad y Tipografías</h3>
+					<p>
+						Un aspecto importante relacionado con la Accesibilidad Web es la de facilitar la comprensión de los textos que se exponen; que sean claros y simples. Pero no sólo el texto que utilicemos tiene que ser claro. La tipografía que usemos para escribirlo puede ayudar o entorpecer su correcta comprensión.
+					</p><!-- fin p-->
+					<p>
+						La tipografía no sólo se refiere a la apariencia de los glifos, sino a cómo se colocan en la página (márgenes de página, la cantidad de espacio vacío entre párrafos o líneas, la alineación del texto, etc.) para facilitar la lectura en usuarios con dislexia o con dificultad de visión, la forma más eficaz de controlar la fuente y otros estilos tipográficos es mediante el uso correcto del CSS.
+					</p><!-- fin p-->
+				</article><!-- fin article .row-->
+
+			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 basico" id="soluciones">
+				<h3 tabindex="16">Algunos principios a tener en cuenta:</h3>
+				<ul>
+					<li><span>&#10149;</span><strong> Utilizar texto real en lugar de texto dentro de gráficos.</strong>
+						<ul class="secundario">
+							<li><span>&#187;</span> El texto se puede transformar en sonido a través de los sintetizadores de voz en los lectores de pantalla;  también puede ampliarse mediante ampliación de pantalla sin pérdida de calidad. Estas son las dos razones principales por qué tener contenido en formato de texto es tan importante para la accesibilidad. Aunque es posible proporcionar texto alternativo para gráficos, no es posible ampliar el texto en la mayoría de los gráficos sin una pérdida de calidad, como por ejemplo sucede en este caso: <br>
+							<img src="img/type-acc.jpg" class="img-resposive type" alt="Imagen que se pixela por ser un texto alternativo para graficos"> <br>
+							Además de la legibilidad del texto dentro de las imágenes, el uso de texto real proporciona beneficios como requisitos de ancho de banda más bajos, traducción más fácil a otros idiomas, optimizaciones de los motores de búsqueda, etc.
+							</li>
+						</ul>
+					</li>
+					<li><span>&#10149;</span><strong> Seleccionar fuentes básicas, sencillas y fáciles de leer: estética vs. funcionalidad</strong>
+						<ul class="secundario">
+							<li><span>&#187;</span> La mejor práctica es usar fuentes con buena legibilidad. Desafortunadamente esto es más fácil decirlo que hacerlo, ya que 		generalmente suele primar el carácter estético antes que el funcional o práctico.
+							En general, es mejor utilizar fuentes estándar disponibles en el dispositivo de usuario final o especificarlas como opción dentro del CSS, como se indica en este caso: <br>
+							<div class="codigo-type">
+								body <br>
+								{ <br>
+								font-family: Helvetica, Arial, sans-serif; <br>
+								} <br>
+								h1 <br>
+								{ <br>
+								font-family: Georgia, Times, "Times New Roman", serif; <br>
+								} <br>
+							</div><!--Cierre div codigo type--> <br>
+							La mayoría de los dispositivos son capaces de mostrar todos los tipos de fuentes con excelente claridad. Es difícil decir qué familia de fuentes es la más adecuada para la web pero algunas fuentes, como Verdana, Tahoma, Trebuchet MS, y Georgia, se desarrollaron específicamente para su uso en medios electrónicos, y ahora son muy comúnmente utilizados y tienen buen rendimiento en cuanto a la legibilidad.
+							</li>
+						</ul>
+					</li>
+					<li><span>&#10149;</span><strong> Utilizar un número limitado de fuentes.</strong>
+						<ul class="secundario">
+							<li><span>&#187;</span>
+								Los documentos con sólo uno, o sólo dos familias tipográficas son generalmente más fáciles de leer. Usar demasiadas familias puede crear un diseño visual confuso, lo cual es malo para todos los usuarios, pero puede ser especialmente difícil para los usuarios con trastornos de lectura, problemas de aprendizaje o trastornos de déficit de atención.
+							</li>
+						</ul>
+					</li>
+					<li><span>&#10149;</span><strong> Asegurarse de que haya suficiente contraste entre el texto y el fondo.</strong>
+						<ul class="secundario">
+							<li><span>&#187;</span>
+								El texto es mucho más fácil de leer cuando hay un contraste suficiente entre el texto y el fondo. El texto negro sobre un fondo blanco es el estándar tanto para la impresión como para la web. Sin embargo, esta combinación no es ideal para todos los usuarios. Los usuarios con visión muy baja pueden configurar el fondo en negro y el texto en blanco o amarillo. Los usuarios con dislexia pueden configurar el fondo en un color blanco apagado o amarillo claro, con texto en negro. <br>
+								<img src="img/type-contrast.png" class="img-resposive type" alt="Ejemplos de contrastes buenos y malos entre el texto y el fondo">
+							</li>
+						</ul>
+					</li>
+					<li><span>&#10149;</span><strong> Evitar tamaños pequeños y utilizar unidades relativas para el tamaño de fuente</strong>
+						<ul class="secundario">
+							<li><span>&#187;</span>
+								Actualmente el tamaño de la fuente no es tan importante como solía ser, debido a la mayor personalización de los navegadores dispositivos. Sin embargo, es importante que el diseño se adapte a los tamaños de texto aumentado sin pérdida de legibilidad o funcionalidad. <br>
+								Es mejor utilizar unidades relativas para establecer tamaños de fuente (por ejemplo, porcentajes o ems) para especificar tamaños de fuente en lugar de unidades absolutas (como píxeles o puntos). Esto proporciona mayor flexibilidad en la modificación de la presentación visual mediante CSS, aunque no es algo imprescindible para mejorar el rendimiento de la tipografía ya que los navegadores modernos redimensionan adecuadamente el texto independientemente de cómo se haya definido el tamaño.
+							</li>
+						</ul>
+					</li>
+					<li><span>&#10149;</span><strong> Limitar el uso de variaciones de fuente como negrita , cursiva y ALL CAPITAL LETTERS.</strong>
+						<ul class="secundario">
+							<li><span>&#187;</span>
+								Si el autor realmente quiere transmitir un grito, un punto de exclamación y / o uso de < em > o < strong > puede ser mejor; aunque los cambios puramente estilísticos deben ser definidos usando CSS.
+								Los lectores de pantalla generalmente no leen el texto de forma diferente si está en mayúsculas, por lo que los oyentes no sabrán que el autor está dando énfasis al texto. Sin embargo, los lectores de pantalla pueden cambiar la inflexión de voz con puntos de exclamación, < em > o < strong > .
+							</li>
+						</ul>
+					</li>
+					<li><span>&#10149;</span><strong> Evitar el texto intermitente y el texto en movimiento</strong>
+						<ul class="secundario">
+							<li><span>&#187;</span>
+								El texto intermitente y el texto en movimiento (como una marquesina) pueden distraer la atención del lector. Esto es especialmente relevante para las personas con déficit de atención o discapacidades cognitivas. Tampoco es probable que provoquen un ataque, pero es probable que disminuyan la legibilidad del documento en su conjunto y aumentan el tiempo que tarda el usuario en terminar de leerlo. <br>
+								La situación se complica aún más si se requiere que los usuarios hagan clic en mover texto. Los usuarios con tiempos de reacción más lentos, temblores u otras dificultades motoras pueden no ser capaces de hacer clic en los enlaces con precisión.
+							</li>
+						</ul>
+					</li>
+				</ul><!-- fin ul-->
+			</article><!-- fin .basico -->
+		</section><!--fin SECTION .row-->
+	</div> <!--Fin class container-->
+
+	<div class="container-fluid">
+		<footer class="row  footer">
+			<h5 class="pull-right"> Diseñado por el Grupo X en el marco de la capacitación <span lang="en">front-end</span> de <a href="www.ada.com.ar/" target="_blank" title="Ir a la página de AdaITW">AdaITW</a></h5>
+		</footer><!-- footer-->
+	</div><!-- fin .container-->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	<!-- enlace del archivo javascript para anclaje-->
+		<script src="js/jquery.anchor.js" type="text/javascript"></script>
+	<!-- script modal
+		<script>
+		$('#myModal').on('shown.bs.modal', function () {
+			$('#myInput').focus()
+		})
+		</script> -->
+</body>
+</html>

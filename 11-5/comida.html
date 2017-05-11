@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FOR- JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>¿Qué come hoy Stef?</h1>
+	<h3>Si empieza por la entrada:</h3>
+		<script>
+			var comida=["tortilla", "papa frita", "huevo frito", "flan"];
+
+
+			for (i=0; i<comida.length;i++){
+						document.write(comida[i]+", ");	
+			}
+			// i=0 entonces tortilla; i=1 entonces papa; i=2 entonces huevo i=3 entonces flan
+		</script>
+	<h3>Si empieza por el postre:</h3>	
+		<script>
+			for (i=comida.length-1; i>=0; i--){
+						document.write(comida[i]+", ");	
+			}
+		</script>
+</body>
+</html>
