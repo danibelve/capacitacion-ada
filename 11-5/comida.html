@@ -11,15 +11,23 @@
 			var comida=["tortilla", "papa frita", "huevo frito", "flan"];
 
 
-			for (i=0; i<comida.length;i++){
-						document.write(comida[i]+", ");	
+			for (i=0; i<comida.length;i++){	
+				if(i==comida.length-1){
+					document.write(comida[i]+". ");	
+				}else{
+					document.write(comida[i]+", ");
+				}
 			}
 			// i=0 entonces tortilla; i=1 entonces papa; i=2 entonces huevo i=3 entonces flan
 		</script>
 	<h3>Si empieza por el postre:</h3>	
 		<script>
 			for (i=comida.length-1; i>=0; i--){
-						document.write(comida[i]+", ");	
+				if (i==0){
+					document.write(comida[i]+". ");		
+				}else{
+					document.write(comida[i]+", ");		
+				}
 			}
 		</script>
 </body>
