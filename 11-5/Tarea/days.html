@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FOR- JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Días de la semana</h1>
+	<p id="todos"></p>
+	<!--<h3>Días hábiles</h3>
+	<p id="habil"></p>
+	<h3>Fin de semana &hearts;</h3>
+	<p id="finde"></p>-->
+	<h3>Días hábiles y fin de semana</h3>
+		<script>
+			var dias=["lunes", " martes", " miércoles", " jueves", " viernes", " sábado", " domingo"];
+			
+			for (i=0; i<dias.length;i++){	
+				document.getElementById("todos").innerHTML = dias + " ";
+			}
+			for (i=0; i<dias.length;i++){		
+				if(i>=4){
+					//document.getElementById("finde").innerHTML = dias[i] + " ";
+					document.write(dias[i] + " es fin de semana. </br>");
+				}else{
+					//document.getElementById("habil").innerHTML = dias[i] + " ";
+					document.write(dias[i] + " es día hábil. </br>");
+				}
+			}
+		</script>
+
+	<h3 id="hoy"></h3>
+		<script>
+		var dia;
+		switch (new Date().getDay()) {
+		    case 0:
+		        dia = "Domingo";
+		        break;
+		    case 1:
+		        dia = "Lunes";
+		        break;
+		    case 2:
+		        dia = "Martes";
+		        break;
+		    case 3:
+		        dia = "Miércoles";
+		        break;
+		    case 4:
+		        dia = "Jueves";
+		        break;
+		    case 5:
+		        dia = "Viernes";
+		        break;
+		    case  6:
+		        dia = "Sábado";
+		}
+		document.getElementById("hoy").innerHTML = "<h3>Hoy es: " + dia + "</h3>";
+		</script>
+
+</body>
+</html>
