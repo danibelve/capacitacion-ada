@@ -15,6 +15,23 @@
 	
 	
 	<div class="container container">
+
+				<div class="barra">
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle mobile" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<span class="glyphicon glyphicon-menu-hamburger hamburger"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li><a href="#somos">Somos</a></li>
+						<li><a  href="#editorial">El dragón azul</a></li>
+						<li><a  href="#eventos">Eventos</a></li>
+						<li><a  href="#nostalgia">Nostalgia</a></li>
+						<li><a  href="#como-llego">Cómo llego </a></li>
+						<li><a  href="#geek">Formulario de inscripción</a></li>
+						<li><a  href="#contacto">Contacto</a></li>
+					  </ul><!-- fin .dropdown-menu-->
+					</div><!-- fin .dropdown -->
+				</div><!-- fin .barra-->
 		<div class="row">
 			<div class="col-md-12  col-sm-12">
 				<header>
@@ -23,25 +40,9 @@
 				</header>
 			</div>
 		</div><!-- fin .row-->
-		<div class="barra">
-			<div class="dropdown">
-			  <button class="btn btn-default dropdown-toggle mobile" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				<span class="glyphicon glyphicon-menu-hamburger hamburger"></span>
-			
-			  </button>
-			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				<li><a href="#somos">Somos</a></li>
-				<li><a  href="#editorial">El dragón azul</a></li>
-				<li><a  href="#eventos">Eventos</a></li>
-				<li><a  href="#geek">Formulario de inscripción</a></li>
-				<li><a  href="#nostalgia">Nostalgia</a></li>
-				<li><a  href="#como-llego">Cómo llego </a></li>
-				<li><a  href="#contacto">Contacto</a></li>
-			  </ul>
-			</div><!-- fin .dropdown -->
-		</div><!-- fin .barra-->
+		
 		<div class="row">
-			<div class="col-md-12 col-sm-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				  <!-- Indicators -->
 				  <ol class="carousel-indicators">
@@ -53,20 +54,20 @@
 				  <div class="carousel-inner center-img" role="listbox">
 					<div class="item active">
 					  <img src="img/slider/slide1.jpg" alt="Radio Geek, escuchala en radiobar.rock - Sábado de 14 a 16 horas" title="Radio Geek">
-					  <div class="carousel-caption slide-p">
+					  <!--<div class="carousel-caption slide-p">
 						Radio Geek, escuchala en radiobar.rock - Sábado de 14 a 16 horas
-					  </div>
+					  </div>-->
 					</div><!-- fin item active-->
 					<div class="item">
 					  <img src="img/slider/slide2.png" alt="Evento Geek Out Fest 3.0 el día 6 de Mayo en el Centro cultural San Martín" title="Evento Geek 3.0">
-					  <div class="carousel-caption slide-p">
-						Evento Geek Out Fest 3.0 el día 6 de Mayo en el Centro cultural San Martín
+					  <!--<div class="carousel-caption slide-p">
+						Evento Geek Out Fest 3.0 el día 6 de Mayo en el Centro cultural San Martín 
 					  </div><!-- fin caption -->
 					</div><!-- fin item-->
 					<div class="item">
 					  <img src="img/slider/slide3.png" alt="Nuevo juego, Geek Out Master. Diseñado por Matías Saravia. Presentación de caja." title="Evento Geek 3.0">
-					  <div class="carousel-caption slide-p">
-						¡Nuevo juego!Geek Out Master,Diseñado por Matías Saravia. Te presentamos la caja.
+					  <div class="carousel-caption new">
+						¡Nuevo juego!
 					  </div><!-- fin caption -->
 					</div><!-- fin item-->
 				  </div><!-- fin .caroysel-inner
@@ -86,9 +87,9 @@
 		
 		</div><!-- fin row-->
 		<div class="row fila">
-			<div class="col-md-6 col-sm-6 seis">
-				<div class="short-div somos">
-					<h2 id="somos"><span class="icon">&#128104;</span>Somos</span></h2>
+			<div class="col-md-6 col-sm-6 seis" id="somos">
+				<div class="short-div somos" >
+					<h2 ><span class="icon">&#128104;</span>Somos</span></h2>
 					<p>
 					Geek Out nació para difundir lo que podríamos llamar "cultura geek": juegos de mesa, de rol, videojuegos, cine, historietas, ferias medievales, etc.<br/>
 					Su fuerte en estos momentos es la difusión de los juegos de mesa modernos y su objetivo es crear sinergia entre los profesionales de las diferentes áreas para enriquecernos mutuamente.
@@ -106,13 +107,13 @@
 					</div>
 				</div><!-- fin .short-div -->
 			</div> <!-- seis -->
-			<div class="col-md-6 col-sm-6 eventos">
-				<h2 id="eventos"><span class="icon">&#128198;</span>Eventos</h2>
+			<div class="col-md-6 col-sm-6 eventos" id="eventos">
+				<h2 ><span class="icon">&#128198;</span>Eventos</h2>
 				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGeek.Out.Argentina&tabs=events&width=340&height=436&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 			</div>
-			<div class="row foto-mapa">
-				<div class="col-lg-6 col-md-12  col-sm-12 izq">
-					<h2 id="nostalgia"><span class="icon">&#128575;</span>Nostalgia</h2>
+			<div class="row foto-mapa" >
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 izq" id="nostalgia">
+					<h2 ><span class="icon">&#128575;</span>Nostalgia</h2>
 					<div class="nostalgia">
 						<a href="#" data-toggle="modal" data-target="#myModal"><img src="img/modal/1_thumb.jpg" alt="Charlie Circus" title="Charlie Circus"></a>
 							<div class="modal fade" tabindex="-1" role="dialog"id="myModal">
@@ -161,18 +162,18 @@
 							</div><!-- /.modal -->
 					</div><!-- fin CLASE nostalgia-->
 				</div><!-- nostalgia-->
-				<div class="col-lg-6 col-md-12 izq col-sm-12">
-					<h2 id="como-llego"><span class="icon">&#128643;</span>¿Cómo llego?</h2>
+				<div class="col-xs-12 col-sm-12col-md-12 col-lg-5" id="como-llego">
+					<h2 ><span class="icon">&#128643;</span>¿Cómo llego?</h2>
 					<div class="mapa">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.953459091049!2d-58.39079978514885!3d-34.60533836509007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac409837013%3A0x154b28406cab5ac7!2sCentro+Cultural+San+Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1492665831081" width="300" height="300" frameborder="0" style="border:0" allowfullscreen>
 						</iframe>
 					</div><!-- fin .mapa-->
 				</div>
 			</div><!-- fin row -->
-			<div class="row-form center-block formulario">
+			<div class="row-form center-block formulario" id="geek">
 			 <form role="form">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<h2 id="geek"><span class="icon">&#10003;</span>Anotate a la Geek Out Fest</h2>
+					<h2 ><span class="icon">&#10003;</span>Anotate a la Geek Out Fest</h2>
 				</div>
 
 					<div class="col-lg-6 col-md-6 col-sm-6 izq" >
@@ -271,17 +272,17 @@
 			</div>
 		</div><!-- fin .row-->
 		<div class="row">
-			<div class="col-md-12 col-sm-12 block" >
-				<h2><span class="icon">&#128235;</span>Contacto</h2>
+			<div class="col-md-12 col-sm-12 block" id="contacto">
+				<h2><span class="icon" >&#128235;</span>Contacto</h2>
 					<form class="form-inline contacto">
 					  
 						<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Nombre">
 					
-						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0 grupo">
 					    <div class="input-group-addon">@</div>
 					    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="e-mail">
 						</div>
-						<label for="comment"></label>
+						<!--<label for="comment"></label>-->
 						<textarea class="form-control textarea" rows="2" id="comment" placeholder="Escriba su mensaje aquí"></textarea>
 						<button type="button" class="btn btn-primary enviar">Enviar</button>	  
 					</form>
@@ -294,8 +295,8 @@
     <script src="js/bootstrap.min.js"></script>
 	<!-- enlace de jquery desde libreria de Google -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- enlace del archivo javascript para anclaje-->
-		<script src="js/jquery.anchor.js" type="text/javascript"></script>
+		<!-- enlace del archivo javascript para anclaj
+		<script src="js/jquery.anchor.js" type="text/javascript"></script>e-->
 	<!-- script modal -->
 		<script>
 		$('#myModal').on('shown.bs.modal', function () {
