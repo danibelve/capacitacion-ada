@@ -7,12 +7,11 @@
 <body>
 	<h1>Días de la semana</h1>
 	<p id="todos"></p>
-	<!-- comento porque no funciona de esta forma
 	<h3>Días hábiles</h3>
 	<p id="habil"></p>
 	<h3>Fin de semana &hearts;</h3>
 	<p id="finde"></p>
-	<h3>Días hábiles y fin de semana</h3>-->
+	<h3>Días hábiles y fin de semana</h3>
 		<script>
 			var dias=["lunes", " martes", " miércoles", " jueves", " viernes", " sábado", " domingo"];
 			
@@ -20,11 +19,11 @@
 				document.getElementById("todos").innerHTML = dias + " ";
 			}
 			for (i=0; i<dias.length;i++){		
-				if(i>=4){
-					// document.getElementById("finde").innerHTML = dias[i] + " ";
+				if(i>=5){
+					document.getElementById("finde").innerHTML += dias[i] + " ";
 					document.write(dias[i] + " es fin de semana. </br>");
 				}else{
-					//document.getElementById("habil").innerHTML = dias[i] + " ";
+					document.getElementById("habil").innerHTML += dias[i] + " ";
 					document.write(dias[i] + " es un día hábil. </br>");
 				}
 			}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>15 de mayo</h1>
+	<h3>Números primos</h3>
+		<input type="text" id="numero"/>
+		<button onclick="primo()">Verificar</button>
+		<button onclick="empty()" id="limpiar">Limpiar</button>
+		<p id="resultado"></p>
+		<p id="ejercicio"></p>
+	<h3>Compras</h3>
+		<script>
+		function primo(){
+			var x= document.getElementById("numero").value;
+			var resto=0;
+			var cont=0;
+				for (i=x; i>=1;i--){
+					var resto=x%i;
+					if(resto==0){
+						cont++;
+					}
+				}
+				if(cont==2){
+					document.getElementById("resultado").innerHTML += x + " es primo; ";
+				}else{
+					document.getElementById("resultado").innerHTML += x + " no es primo; ";
+				}
+		}
+		/*z= [10,13,5,80];
+		for(var j=0; j<=z.length-1; j++){
+			document.write("el valor "+ j + " del array es " + z[j]+ ".<br>");
+		}*/
+
+		var compras=[25.10,35.00,104.90,86.75];
+		var total=0;
+		for(var i=0; i<=compras.length-1; i++){
+			document.write("Valor item: $" + compras[i]+ ".<br>");
+			total=total+compras[i]; //total +=compras[i];
+		}
+		document.write("El total de la compra es " + total + ".<br>");
+		
+			if(total>250 && total<500){
+				var diez=10*total/100
+				total=total-diez;
+				document.write("Su compra excede los $250; recibe un descuento del 10%: $" + total + ".");
+			}else {
+				if(total>200 && total<250){
+					var cinco=5*total/100
+					total=total-cinco;
+					document.write("Su compra excede los $200; recibe un descuento del 5%: $" + total + ".");	
+				}else{
+					var veinte=20*total/100; 
+					total=total-veinte;
+					document.write("Su compra excede los $500; recibe un descuento del 20%: $" + total + ".");
+				}
+			}
+
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function() {
+					$("#limpiar").click(function(event) {
+						$("#resultado").empty();
+					});
+		
+				});
+		</script>
+</body>
+</html>
