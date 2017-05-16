@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>16 de mayo</h1>
+	<h3>Factorial</h3>
+		<input type="text" id="numero"/>
+		<button onclick="factorial()">Verificar</button>
+		<button onclick="empty()" id="limpiar">Limpiar</button>
+		<p id="resultado"></p>
+		<script>
+		function factorial(){
+			var x= document.getElementById("numero").value;
+				for (i=x-1; i>=1;i--){
+					x=x*i;
+					var factorial= x;
+					}
+			document.getElementById("resultado").innerHTML += factorial;
+		}
+		var nombres=["Pepe","Rigoberto","Octavio","Sebastian","Jaime","Pancho"];
+		 for(i=1;i<=nombres.length-1;i=i+2){
+		 	document.write(nombres[i] + ", ");
+		 }
+
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function() {
+					$("#limpiar").click(function(event) {
+						$("#resultado").empty();
+					});
+		
+				});
+		</script>
+</body>
+</html>
