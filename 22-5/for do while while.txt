@@ -1,0 +1,19 @@
+for cuando conozco las veces que necesito que se ejecute
+while cuando desconozco cuantas veces se va a tener que ejecutar, puede que nunca se ejecute.
+do while cuando necesito que al menos se ejecute una sola vez.
+For y While pueden usarse indiscriminadamente.
+Ejemplo de do while:
+
+do{
+	var user=prompt(...);
+	var pass=prompt(...);
+	var loginOk=validar(user,pass);
+}while(!loginOk);
+
+var nombres=[];
+
+ESTO NO FUNCIONA:
+do {
+	alert(nombres[i]);
+	i++
+}while(i<nombres.length);
