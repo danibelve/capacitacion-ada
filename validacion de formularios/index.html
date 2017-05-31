@@ -3,20 +3,54 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<!-- hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- VIEWPORT-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 </head>
-<body>
-	<form>
-		<input type="text" name="nombre" id="nombre" placeholder="Nombre">
-		<input type="text" name="apellido" id="apellido" placeholder="Apellido">
-		<input type="text" name="tel" id="telefono" placeholder="Telefono">
-		<input type="email" name="email" id="email" placeholder="Email">
-		<input type="number" name="edad" id="edad" placeholder="Edad">
-		
-		
-		<button onclick="enviar()" id="btn-saludar" type="button">Enviar</button>
-	</form>
+<body class="container-fluid">
+	<div class="row back">
+		<header class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 pad">
+		  <h1>Validación de formulario <small>Aprendiendo JavaScript</small></h1>
+		</header>
+	</div>
+	<form class="row">
+		<div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4">
+			<div class="input-group">
+			  <span class="input-group-addon" id="sizing-addon2">Nombre</span>
+			  <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" aria-describedby="sizing-addon2">
+			</div>
+			<div class="input-group">
+			  <span class="input-group-addon" id="sizing-addon2">Apellido</span>
+			  <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido" aria-describedby="sizing-addon2">
+			</div>
+			<div class="input-group">
+			  <span class="input-group-addon" id="sizing-addon2">Teléfono</span>
+			  <input type="text" class="form-control" name="tel" id="telefono" placeholder="Telefono" aria-describedby="sizing-addon2">
+			</div>
+			<div class="input-group">
+			  <span class="input-group-addon" id="sizing-addon2">E-mail</span>
+			  <input type="text" class="form-control" name="email" id="email" placeholder="Email" aria-describedby="sizing-addon2">
+			</div>	
+			<div class="input-group">
+			  <span class="input-group-addon" id="sizing-addon2">Edad</span>
+			  <input type="number" class="form-control number" name="edad" id="edad" placeholder="Edad" aria-describedby="sizing-addon2">
+			</div>	
+		</div><!-- col 4 4 4 -->
+		<div class="row ">
+			<div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 text-center">
+				<button type="button" onclick="enviar()" id="btn-enviar" class="btn btn-primary enviar">Enviar</button>
+			</div><!-- 4-->
+		</div><!- row -->
+	</form><!-- fin row-->
 	
 
-	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

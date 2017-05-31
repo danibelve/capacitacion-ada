@@ -1,0 +1,40 @@
+.back{
+	border-bottom: 2px solid #986A46 !important;
+	height: 60px !important;
+}
+header h1{
+	text-align: center;
+	background-color: #986A46;
+	color:#FFF;
+	font-weight: bolder;
+
+}
+header h1 small{
+	color:#FFF;
+}
+.input-group{
+	padding-top: 10px !important;
+	margin: 0 auto;
+}
+.input-group-addon{
+	background-color: #986A46 !important;
+	color: #FFF !important;
+}
+.number{
+	width: 170px !important;
+}
+#sizing-addon2{
+	width: 120px!important;
+}
+.enviar{
+	margin-top: 10px;
+	background-color: #FFF !important;
+	color: #986A46 !important;
+	border-color: #986A46 !important;
+}
+
+.enviar:hover{
+	color: #FFF !important;
+	background-color: #986A46 !important;
+	border-color: #000 !important;
+}
