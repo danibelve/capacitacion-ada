@@ -2,6 +2,14 @@
 	border-bottom: 2px solid #986A46 !important;
 	height: 60px !important;
 }
+
+#alert,#error{
+	display: none;
+}
+
+
+
+
 header h1{
 	text-align: center;
 	background-color: #986A46;
@@ -20,12 +28,15 @@ header h1 small{
 	background-color: #986A46 !important;
 	color: #FFF !important;
 }
-.number{
+/*.number{
 	width: 170px !important;
-}
+}*/
 #sizing-addon2{
 	width: 120px!important;
 }
+/*#div-error{
+	display: none;
+}*/
 .enviar{
 	margin-top: 10px;
 	background-color: #FFF !important;
