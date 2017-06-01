@@ -1,5 +1,8 @@
 	var campos=["nombre","apellido","telefono","email","edad"];
-	/*var nombre = document.getElementById('nombre').value;
+	/*
+	ESTO PIERDE SENTIDO AL MANEJARSE CON EL ARRAY QUE AGARRA EL VALOR ENTRE COMILLAS
+	DENTRO DEL FOR(*)
+	var nombre = document.getElementById('nombre').value;
 	var apellido = document.getElementById('apellido').value;
 	var telefono = document.getElementById('telefono').value;
 	var email = document.getElementById('email').value;
@@ -9,8 +12,13 @@
 	//
 
 function enviar(nombre,apellido,telefono,email,edad){
+	
+		/* EL FOR EVITA ESTO :
+			if(!campoVacio(nombre) && !campoVacio(apellido) && !campoVacio(telefono) && !campoVacio(email)
+				&& !campoVacio(email))*/
 
 				for(var i = 0; i <campos.length; i++){
+					//(*)POR ESTO PIERDE SENTIDO LA DECLARACION UNA POR UNA
 					var valorCampo = document.getElementById(campos[i]).value;
 					if (valorCampo == null || valorCampo.length == 0){
 						warning.style.display = "block";
@@ -23,9 +31,12 @@ function enviar(nombre,apellido,telefono,email,edad){
 						if(!texto(campos[i=1])){
 							errorHtml.innerHTML += "<li>El texto no puede tener números</li>";
 						}
-						/*if(!tel(telefono)){
+						/*
+						TODAVÍA NO FUNCIONA, TENGO QUE MODIFICAR LA FUNCION Y HACERLA CON UN FOR
+						if(!tel(telefono)){
 							errorHtml.innerHTML += "<li>Entre 8 y 12 números.</li>";
-						}*/
+						}
+						*/
 						if (!mailValido(campos[i=3])){
 							errorHtml.innerHTML += "<li>Formato invalido</li>";
 						}
@@ -39,21 +50,7 @@ function enviar(nombre,apellido,telefono,email,edad){
 				}				
 				return false;
 
-			/*if(
-				!campoVacio(nombre) && !campoVacio(apellido) && !campoVacio(telefono) && !campoVacio(email)
-				&& !campoVacio(email)
-			   )
-			 */
-			 /*if(
-				!campoVacio(campos)
-			   )
-			 	{*/
 
-	
-			/*}fin if !campoVacio()
-			else{
-				errores[0] = "Completar campos";
-			}	*/
 
 
 		
@@ -72,7 +69,9 @@ function texto(x){
 			
 	return false;
 }
-/*function tel(x){
+/*
+  ESTO TENGO QUE CHEQUEARLO, TODAVÍA SE ROMPE UN POCO, VOY A INTENTARLO CON UN FOR Y EL ARRAY:
+	function tel(x){
 	if ((x.length >= 8 && x.length<=12)&& (!isNaN(x))) {
 		return true;
 	}
