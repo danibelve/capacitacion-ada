@@ -1,0 +1,76 @@
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: boder-box;
+       box-sizing: border-box;
+}
+.contenedor{
+	position: relative;
+}
+nav a{
+		margin-top: 0px !important;
+		padding-top: 0px !important;
+}
+nav img{
+	margin-top: 5px !important;
+	height: 40px;
+}
+.links{
+	margin: 8px -5px !important;
+		display: flex;
+	justify-content: center ;
+}
+.links li a{
+	padding-top: 5px !important;
+}
+.header{
+	display: flex;
+	justify-content: center ;
+	flex-direction: column;
+	background-color: #00B438;
+	color: #FFF;
+	font-weight: bolder;
+}
+.header img{
+	margin-top: -40px;
+}
+.inauguracion{
+		max-width: calc(100% + 30px);
+		padding-left: 15px;
+}
+.inauguracion p{
+	text-align: justify;
+	padding-right: 10px;
+}
+.inauguracion img{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.novedades {
+	background-color: #00B438;
+	color: white;
+	font-weight: bolder;
+	max-width: calc(100% + 30px);
+	/*text-shadow: -2px -2px 1px #000,2px -2px 1px #000;*/
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+.novedades p{
+	text-align: justify;
+}
+.novedades img{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.formulario{
+	padding-top: 10px;
+}
+.extra{
+	display:none;
+}
+footer{
+	background-color: #000;
+	color: #FFF;
+	/*padding-top: 10px;*/
+	margin-top: 10px;
+	margin-bottom: -11px;
+}
