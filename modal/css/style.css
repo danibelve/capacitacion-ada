@@ -1,0 +1,43 @@
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: boder-box;
+       box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+}
+.center{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	z-index: 2;
+	position: relative;
+}
+.thumb-group{
+	background-color: #DBEAF9;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#grande{
+	display: none;
+	z-index: 100;
+	background-color: red;
+	position: absolute;
+	top: 15%;
+	bottom: 5%;
+	left: 30%;
+	width: 400px;
+	height: 400px;
+}
+
+#grande h4{
+	text-align: center;
+}
+#img_grande{
+	margin-left: 25%;
+}

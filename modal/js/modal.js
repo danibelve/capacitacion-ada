@@ -34,15 +34,20 @@ $(document).ready(function(){
 	})//fin verMas
 
 	$('.img_peque').on('click', function(){
-
-		//event.preventDefault();
-
-		id=$(this).data('img');
-		url= 'img/'+id;
-		console.log(url);
-		$('#img_grande').attr('src', url);
+		imagen=$(this).data('img');
+		alt=$(this).data('titulo');
 
 
+		//url= $('.img_grande').data('img');
+		//alt= $('.img_grande').data('titulo');
+		console.log(alt);
+
+		console.log(imagen);
+		$('#img_grande').attr('src', imagen);
+		$('#titulo-modal').append(alt);
+		$('.contenedores').css('opacity', 0.3);
+		$('#grande').css('display','block');
+		console.log($('#grande').css('display'));
 
 
 	})

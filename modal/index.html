@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Modales</title>
+	    <meta charset="utf-8">
+	    <!-- FAVICON -->
+			<link rel="icon" href="img/icon.png" type="image">
+	    <!-- DESCRIPCIÓN DE CONTENIDO -->
+		    <meta name="description" content="Código modales.">
+		    <meta name="keywords" content="javascript,jquery">
+		    <meta name="author" content="Daniela Belvedere">
+	     <!-- hojas de estilo -->
+	   	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	   	 <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	    <!-- VIEWPORT-->
+	   	 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	</head>
+	<body>
+	
+	<div class="contenedores">
+		<h1>Modales</h1>
+		<div class="center">
+			<div class="thumb-group">
+				<div class="thumb">
+					<h3>Batman</h3>
+					<a href="#" class="img_peque" data-img="img/art1_grande.png" data-id="grande" data-titulo="Batman"><img class="img_grande" src="img/art1.png"  alt="Batman"  width="200px" height="250px"></a>
+				</div><!-- thumb-->
+				<div class="thumb">
+					<h3>Nexus</h3>
+					<a href="#"  class="img_peque" data-id="grande"  data-img="img/art2_grande.png" data-titulo="Nexus" ><img class="img_grande" src="img/art2.png" alt="Nexus"width="200px" height="250px"></a>
+				</div><!-- thumb-->
+			</div><!-- thumb-group-->
+		</div>
+	</div><!-- contenedores-->
+
+	<div  id="grande">
+		<h4 id="titulo-modal"></h4>
+		<img id="img_grande" class="grande" img="foto" src="">
+		
+	</div><!--modal-->
+	<!-- SCRIPTS-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script src="js/modal.js"></script>
+	</body>
+</html>
