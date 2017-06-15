@@ -50,5 +50,32 @@ $(document).ready(function(){
 		console.log($('#grande').css('display'));
 
 
-	})
+	})// fin transition
+
+	$("#imagen").on('mouseenter',function(){
+
+		img = $(this).data('img');
+		src= $(this).data('src');
+		console.log(img);
+		//$(this).attr('src',img);
+		$('#imagen').fadeTo("ease", 0.2,function(){
+			$('#imagen').attr('src', img);
+			$('#imagen').css('opacity', 1);
+			$("#imagen").on('mouseleave',function(){
+				$('#imagen').attr('src', src);
+			});
+
+		});
+		/*$('#imagen').animate({
+			opacity: 0.15
+		},500, function(){
+
+			complete: $(this).attr('src',imagen)
+		});*/
+
+		/*('slow', function(){
+			$('#imagen').attr('src', img);
+		});//fin fadeOut*/
+
+	});//fin mouseover
 });//fin document ready

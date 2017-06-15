@@ -41,9 +41,17 @@ $(document).ready(function(){
 		url= 'img/'+id;
 		console.log(url);
 		$('#img_grande').attr('src', url);
+	});//fin modal
 
-
-
-
-	})
+	$('.menu').on('click',function(event){
+		event.preventDefault();
+		dir=$(this).attr('href');
+		console.log(dir);
+		$('html, body').animate({
+			scrollTop:$(dir).offset().top
+		},500);
+			
+			//	$(dir).slideDown("slow");
+		
+	});// fin menu
 });//fin document ready

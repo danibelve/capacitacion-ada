@@ -17,7 +17,7 @@
 	   	 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 	</head>
 	<body>
-
+	<div class="todo">
 	<div class="container-fluid contenedor">
 		<div class="row">
 		
@@ -27,9 +27,9 @@
          			  src="img/icon.png">
          		</a>
 				<ul class="nav navbar-nav pull-right links">
-		            <li><a href="#">Uno</a></li>
-		            <li><a href="#">Dos</a></li>
-		            <li><a href="#">Tres</a></li>
+		            <li><a class="menu" href="#news">News</a></li>
+		            <li><a class="menu" href="#formulario" >Contacto</a></li>
+		            <li><a class="menu" href="#thumbs" >Articulos</a></li>
             	</ul>
    			</nav>
 			 <div class="page-header text-center header contenedor">
@@ -40,14 +40,13 @@
 			  	
 			 </div>
 
-		</div> <!-- fin class container header -->
-		</div> <!--fin row-->
+		</div> <!-- fin class row -->
+	</div> <!--fin container-->
 	
 		<div class="row slider">
 		</div>
-	</div> <!-- fin container fluid-->
 	<div class="container-fluid contenedor">
-		<div class="row inauguracion">
+		<div class="row inauguracion" id="news">
 			<div class="col-md-3">
 				<img src="img/art1.png" alt="Inauguración">
 			</div> <!-- fin col fotito -->
@@ -74,7 +73,7 @@
 	</div> <!-- fin container-->
 
 	<div class="container contenedor">
-		<div class="row formulario">
+		<div class="row formulario" id="formulario">
 			<form class="col-md-6 ">
 				<div class="form-group">
 				    <label for="note">Formulario</label>
@@ -99,10 +98,10 @@
 				<button type="submit" class="btn btn-default pull-right">Submit</button>
 			</form><!-- fin form-->
 			<div class="cold-md6 ">
-				<iframe class="pull-rigth"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2584901121413!2d-58.382010985149144!3d-34.59762456468196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9ce172943%3A0x396defb3d27ceaa3!2sSuipacha+892%2C+C1008AAR+CABA!5e0!3m2!1ses!2sar!4v1496889410387" width="400" height="400" frameborder="1" style="border:1; margin-left: 80px;" allowfullscreen></iframe>
+				<!--<iframe class="pull-rigth"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2584901121413!2d-58.382010985149144!3d-34.59762456468196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9ce172943%3A0x396defb3d27ceaa3!2sSuipacha+892%2C+C1008AAR+CABA!5e0!3m2!1ses!2sar!4v1496889410387" width="400" height="400" frameborder="1" style="border:1; margin-left: 80px;" allowfullscreen></iframe>-->
 			</div>
 		</div><!-- fin row-->	
-		<div class="row">
+		<div class="row" id="thumbs">
 		  <div class="col-sm-6 col-md-4">
 		    <div class="thumbnail">
 		     <a class="img_peque" href="#" data-toggle="modal" data-target="#myModal" data-img="art_peque.png"> <img src="img/art1.png" alt="..."></a>
@@ -141,11 +140,11 @@
 		      </div>
 		    </div>
 		  </div><!-- fin col-->
-		</div><!-- fin row-->
+		</div><!-- fin row thumbs-->
 	</div> <!-- fin container-->
 	<footer><p class="text-center">Desarrollado por Danny, en el marco de la capacitación Ada ITW.</p></footer>
 
-
+	</div> <!-- todo-->
 	<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content ">
